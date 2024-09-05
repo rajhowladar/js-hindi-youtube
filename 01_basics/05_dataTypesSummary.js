@@ -46,3 +46,35 @@ console.log(typeof myFunction); // basically type is object function
 // the return type of non primitive data types are (objects)
 
 //  https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//****************************************
+
+
+// memory , threads , how value store in memory 
+
+// stack (primitive)call by value , Heap(non-primitive) call by refrence
+
+let myYoutubeName = "Raj tech"
+
+let nayaWala = myYoutubeName
+
+nayaWala = "hello raj"
+
+console.log(myYoutubeName);
+console.log(nayaWala);     // no orginal value , value of myYoutubeName not chages , copy passes
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+    
+}
+
+let userTwo = userOne   // here user one and user two pointing same memory location (call by refrence)
+
+console.log(userOne);
+console.log(userTwo);
+
+
+
+
